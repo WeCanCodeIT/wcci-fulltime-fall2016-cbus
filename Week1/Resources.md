@@ -1,3 +1,3 @@
 # Resources
-[Intro to Java Calculator Walkthrough](https://docs.google.com/presentation/d/15JTGw-FME74l_pU3xyK1hg8aaA9H9ijO9V8L2xlsGuA/edit?usp=sharing)
-[Data Types & Variables](https://docs.google.com/presentation/d/1Qiax6scDufcjcKJYpIOE8S4LA6rH7GJH1AV_mxCZOFE/edit?usp=sharing) 
+- [Intro to Java Calculator Walkthrough](https://docs.google.com/presentation/d/15JTGw-FME74l_pU3xyK1hg8aaA9H9ijO9V8L2xlsGuA/edit?usp=sharing)
+- [Data Types & Variables](https://docs.google.com/presentation/d/1Qiax6scDufcjcKJYpIOE8S4LA6rH7GJH1AV_mxCZOFE/edit?usp=sharing) 
