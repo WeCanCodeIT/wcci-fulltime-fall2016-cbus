@@ -1,4 +1,8 @@
 # Curriculum Overview
+Welcome to coding bootcamp! You will learn an immense amount of material over the course of the next 12 weeks, enough to call yourself a junior programmer, developer or software engineer. Where you take this is up to you. Please note, 90% attendance is required for successful course completion.
+
+The readings and chapter exercises are not suggestions, it is imperative that you keep up with chapter readings and exercises. Yes, this will be challenging, but remember that putting a lot of effort in now is a huge investment in your future.
+
 
 (Note that the timelines in this are for the 12-week full time boot camp)
 
@@ -14,42 +18,49 @@
 (Always subject to change)
 
 - Week 1
+  - Building Cohort Culture
   - Variables, Operators, Expressions, Basic Types
   - Conditionals
-  - Strings and Text Processing
-- Week 2
+  - Strings and Text 
   - Loops and Arrays
+
+- Week 2
   - Intro to OOP
-  - Lists and Dictionaries
-  - Building Classes - Methods and Properties
+  - Building Classes
+  - Methods
+  - Abstraction
+
 - Week 3
   - Inheritance
-  - Exceptions and File I/O
+  - Polymorphism
+  - Encapsulation
+  - Exceptions & File I/O
+  - Test Driven Development
+
 - Week 4
   - HTML
   - CSS
   - Bootstrap
-  - Razor
+  - Web Scripting
+
 - Week 5
-  - MVC
-  - Code First Model Design
+  - Intro to Model View Controller & Spring Framework
+  - Code First with Hibernate
 - Week 6
-  - Database First Model Design
-  - SQL
-  - LINQ and Lambda Expressions
+  - Relational Databases
+  - SQL (queries, statements, and stored procedures)
+  - Data Hygiene
+  - Accessing data in MVC
 - Week 7
   - JavaScript
   - jQuery
-  - MVC Integration of Scripts
 - Week 8
-  - Deployment
   - AJAX
   - JSON and APIs
 - Week 9
-  - Advanced MVC
-  - TDD
-  - RegEx
-  - StringBuilder
+  - Extension Topics and Review
+  - Data Structures
+  - Algorithms
 - Weeks 10-12
   - Final Project
   - Scrum
@@ -57,7 +68,7 @@
 
 # Grading Policy
 
-Class is from 9:30am-3:00pm Monday-Friday, with the exception of holidays on which we will not be having class.
+Class is from 9:30am-3:30pm Monday-Friday, with the exception of holidays on which we will not be having class.
 
 You are required to attend a minimum of 90% of class time to be eligible for graduation. Please inform your instructor and TA if extenuating circumstances arise.
 
@@ -79,20 +90,28 @@ Projects must be turned in by the date and time specified on the project informa
 
 Final projects will be worth 100 points per week worked on the project, with each week graded independently. These grades will be determined based upon the milestones set for each project and how well those milestones were met.
 
+## Plagiarism Policy
+All submitted code must be original code written by the student or the student and project team, unless using an authorized framework or tool (i.e. Twitter Bootstrap). Any plagiarism offense will result in a score of 0 on the assignment. Any plagiarism offense following a first offense could result in expulsion from We Can Code IT Coding Bootcamp.
+
+## Assignment Submission Policy
+All assignments must be submitted before the stated deadline through the associated submission form. Assignments that are not submitted through the associated submission form before the stated deadline will receive a 10% deduction. For each day an assignment is late, the assignment will receive a 10% deduction. Any assignment that is more than 4 calendar days late will not be accepted.
+
+## Late Submissions
+Assignments are expected to be turned in on time. If an assignment is not turned in by the date / time required, 10% will be subtracted for each day it is late. Unless otherwise noted, you have until midnight of the due date to turn in your assignment. If an assignment is due on 1/1 (by midnight), and you turn it in at 12:05 am on 1/2 , that assignment is considered 1 day late, and will automatically incur a 10% grade penalty. Assignments turned in within 5 days past the due date may not be accepted, and are subject to a score of 0. You must complete all projects in order to pass the course.
+
 
 # Course Resources
 
 This repository will contain (links to) useful resources, such as code developed in class, slides, reading material, etc. On top of that, there is one required book and a couple other books that you may find useful. You can go with paper or electronic versions, and you may want to check Amazon or other booksellers (the links below go directly to the publishers).
 
 Required Textbook:
-- _[The C# Player's Guide](http://starboundsoftware.com/books/c-sharp/)_, by RB Whitaker
+- Java: A Beginner’s Guide, Sixth Edition by Herbert Schildt
 
 Optional Textbooks:
-- _[Database Design for Mere Mortals](http://www.informit.com/store/database-design-for-mere-mortals-a-hands-on-guide-to-9780321884497)_, by Michael J. Hernandez
-- _[ASP.NET MVC 5 with Boostrap and Knockout.js](http://shop.oreilly.com/product/0636920035350.do)_, by Jamie Munro
+- Beginning Hibernate by Jeff Linwood and Dave Minter 
+- Optional: Spring in Practive by Willie Wheeler 
+- Optional: Database Design for Mere Mortals: A Hands-On Guide to Relational Database Design by Michael J Hernandez 
 
-Free Digital Textbook
-- _[Fundamentals of Computer Programming with C#](http://www.introprogramming.info/english-intro-csharp-book/downloads/)_ (aka _The Bulgarian Book_), by Svetlin Nakov, Veselin Kolev and team
 
 
 © 2016 We Can Code IT ALL RIGHTS RESERVED
