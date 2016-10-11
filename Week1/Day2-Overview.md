@@ -17,8 +17,8 @@
   - User Input
   - Conditionals
   - Loops
-- Intro to Git
-  - [Try Git Exercise](https://try.github.io/levels/1/challenges/1)
+
 
 ###Homework
-- TBD
+- Intro to Git
+  - [Try Git Exercise](https://try.github.io/levels/1/challenges/1)
