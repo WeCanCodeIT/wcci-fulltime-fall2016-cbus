@@ -10,13 +10,6 @@
   - Arrays
   - Loops
   - Operators  
-- Fibonacci Exercise
-  - Loops
-
-- Calculator II Exercise
-  - User Input
-  - Conditionals
-  - Loops
 
 
 ###Homework
