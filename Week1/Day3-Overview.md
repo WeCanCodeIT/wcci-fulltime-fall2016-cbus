@@ -12,4 +12,9 @@
 - Git & GitHub
 
 ###Homework
--TBD
+(Hint: Look up the mod/modulus operator)
+- CodeEval: Even Numbers 
+- CodeEval: Odd Numbers 
+- CodeEval: Penultimate Word
+- CodeEval: Age Distribution
+- CodeEval: FizzBuzz
