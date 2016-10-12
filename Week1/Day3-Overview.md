@@ -18,9 +18,4 @@
   - [ ] ***Extension: Ask the user if he/she would like to do another calculation. If the user says "yes" then the program should start over. If the user says "no" then print "Goodbye"
 
 ###Homework
-(Hint: Look up the mod/modulus operator)
-- CodeEval: Even Numbers 
-- CodeEval: Odd Numbers 
-- CodeEval: Penultimate Word
-- CodeEval: Age Distribution
-- CodeEval: FizzBuzz
+- Continue working on Calculator II Exercise
