@@ -15,6 +15,7 @@
   - Split Method
   - ToLowerCase Method
   - ToString Method
+  - Equals Method
   - ToUpperCase Method
   - Trim Method
 
