@@ -28,6 +28,7 @@
 - Create a Piggy Bank Deposit Calculator
   - [ ] Ask the user for the number of silver/gold dollars, quarters, dimes, nickels, and pennies deposited
   - [ ] Print the total deposit amount
+  - [ ] EXTENSION: If you haven't already, try reading about the [Big Decimal Class](https://www.tutorialspoint.com/java/math/java_math_bigdecimal.htm) and using this built in Java class instead of a data type such as double for the money values.
 - CodeEval Exercises
   - [ ] Lowercase
   - [ ] Penultimate Word
