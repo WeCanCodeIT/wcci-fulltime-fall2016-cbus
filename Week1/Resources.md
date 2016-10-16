@@ -5,3 +5,4 @@
 - [GitHub Cheatsheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf)
 - [Loops](https://docs.google.com/presentation/d/1ZE61i1fTv1Zke-Dwew5cTXaXrapFEvqq9_7JQUpGIgA/edit?usp=sharing)
 - [Conditionals](https://docs.google.com/presentation/d/19PVxVvHTiADbd8LYmosGONFzrhR3hqWQD4ObQcah_u0/edit?usp=sharing)
+- [How to Submit the Fortune Teller Project](https://drive.google.com/file/d/0B8OAf6lwT0lzQXJ5a3FzM25pdGc/view)
