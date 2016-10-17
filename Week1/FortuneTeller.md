@@ -1,5 +1,5 @@
 # Fortune Teller
-## Due: Sunday, October 16th by 11:59 PM
+## Due: Monday, October 17th by 5:00 PM
 
 ## Overview
 Develop a console application that will tell the user’s fortune based on data received from the user.
