@@ -3,10 +3,11 @@
 (Always subject to change)
 
 ###Topics
-  
-- Intro to OOP  
+   
 - Intro to Methods
-- Continue CodeEval Practice
+- Weekly Retrospective
+- Project Peer Review
+
 
 ###Homework
-- TBD
+- Continue CodeEval Practice
