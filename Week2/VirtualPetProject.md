@@ -3,6 +3,7 @@
 ## Overview
 
 Make a virtual pet. Bonus points if it becomes a fad.
+
 Due: Monday, October 24th before 9:30 AM
 
 ## Tasks
