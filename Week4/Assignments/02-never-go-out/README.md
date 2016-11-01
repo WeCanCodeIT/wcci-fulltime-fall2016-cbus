@@ -9,7 +9,6 @@ Write the CSS for some webpages, focusing on writing the cleanest CSS rules that
 ### Required Tasks
 
 - [ ] Yak Shaving
-  - [ ] Fork the [never-go-out]() repository **TODO: replace with cohort-specific link**
   - [ ] Make frequent commits with descriptive messages
 - [ ] Sonnet # 18 version 1 (dark blue)
 - [ ] Sonnet # 18 version 2 (light blue)
