@@ -9,7 +9,6 @@ Write the HTML for some websites, focusing on picking appropriate elements to em
 ### Required Tasks
 
 - [ ] Yak Shaving
-  - [ ] (OPTIONAL) Create a Visual Studio **Web Site** project called `structure`
   - [ ] Create a repository called `structure`
   - [ ] Make frequent commits with descriptive messages
 - [ ] Barebones HTML
@@ -82,12 +81,6 @@ Work on these additional layouts. These aren't necessarily more complex layouts 
 
 Your HTML pages will LOOK very different than the screenshots, but the content should be accessible in a similar way.
 
-If you want to get some filler text, you can visit [Lipsum.com](http://www.lipsum.com/), or get some local flavor from [Cleveland Ipsum](http://localipsum.meyerweb.com/).
+If you want to get some filler text, you can visit [Lipsum.com](http://www.lipsum.com/), or get some local flavor from [Bacon Ipsum](https://baconipsum.com/).
 
-You can use Visual Studio to work on these files. One of the simplest ways is to create a new **Web Site** project.
-
-Go to `File` > `New` > `Website`, and choose `ASP.NET Empty Web Site` as your starting point. Give the project a name.
-
-To add files to your project, right click on the project in **Solution Explorer** and choose `Add` > `Add New Item`, and choose `HTML Page` as the item type.
-
-You can view your files in a web browser by clicking the green `>` button at the top of Visual Studio.
+You can use Notepad to work on these files. 
