@@ -26,6 +26,7 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Create a ```ReviewController``` class [**Controller**] and ```review-view.html``` template [**View**] that:
     - creates an instance of Review
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
+
 ## Review Application: Retrieve the Review from an Entity Repository
 - [ ] Create a ```ReviewRepository``` class with a ```findById(Long id)``` method that returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
