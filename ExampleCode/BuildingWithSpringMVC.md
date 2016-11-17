@@ -12,15 +12,18 @@ Try completing the following objectives on your own for creating a new Spring MV
         - org.springframework:spring-test: Testing support for Spring
         - org.springframework.boot:spring-boot-starter-test & org.springframework.boot:spring-boot-test: Testing support for Spring Boot
 - [ ] Open a Git Bash shell.
-- [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
-- [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
-- [ ] Import the generated project into Eclipse.
-- [ ] Create source folders named:
+- [ ] Create folders named:
     - [ ] src/main/java
     - [ ] src/test/java
     - [ ] src/main/resources
+- [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
+- [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
+- [ ] Import the generated project into Eclipse.
 
-##  Review Application: Display a Single Review
+## Review Application
+In the following steps, create classes in a package called ```review```.
+
+###  Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
     - [ ] id
     - [ ] title
@@ -31,14 +34,14 @@ Try completing the following objectives on your own for creating a new Spring MV
     - creates an instance of Review
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
-## Review Application: Retrieve the Review from an Entity Repository
+### Retrieve the Review from an Entity Repository
 - [ ] Create a ```ReviewRepository``` class with a ```public Review findById(Long id)``` method that returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
     - [ ] accept an *id* request parameter
     - [ ] call the ```findById``` method you created in ```ReviewRepository``` using the id specified in the request
     - [Note: the specific value of the id does not matter yet.]
     
-## Review Application: Display Multiple Reviews
+### Display Multiple Reviews
 - Update ```ReviewRepository``` to support multiple reviews
     - [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
     - [ ] Populate this map with three reviews, using each review's id as the key
