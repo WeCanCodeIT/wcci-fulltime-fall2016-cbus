@@ -14,18 +14,18 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Open a Git Bash shell.
 - [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
+- [ ] Import the generated project into Eclipse.
 
 ### Review Application: Display a Single Review
-- [ ] Create a Review class [Model] with the following attributes:
+- [ ] Create a ```Review``` class [**Model**] with the following attributes:
     - [ ] id
     - [ ] title
     - [ ] date
     - [ ] author
     - [ ] content
-- [ ] Create a ReviewController class [Controller] that:
+- [ ] Create a ```ReviewController``` class [**Controller**] and ```review-view.html``` template [**View**] that:
     - creates an instance of Review
-    - displays the Review instance when the url "http://localhost:8080/review" is accessed
-    
+    - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
 References:
 - Spring
