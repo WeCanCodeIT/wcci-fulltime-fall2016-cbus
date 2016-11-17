@@ -1,4 +1,4 @@
-#Developing a Spring MVC Application Step-By-Step
+#Developing a Spring Boot MVC Application with JPA: Step-By-Step
 Try completing the following objectives on your own for creating a new Spring MVC Application.
 
 ## Project Setup (Iteration 0)
