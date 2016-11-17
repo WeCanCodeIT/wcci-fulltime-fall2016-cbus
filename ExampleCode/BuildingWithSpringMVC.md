@@ -16,7 +16,7 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
 
-### Review Application: Display a Single Review
+##  Review Application: Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
     - [ ] id
     - [ ] title
@@ -26,7 +26,11 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Create a ```ReviewController``` class [**Controller**] and ```review-view.html``` template [**View**] that:
     - creates an instance of Review
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
-
+## Review Application: Retrieve the Review from an Entity Repository
+- [ ] Create a ```ReviewRepository``` class with a ```findById(Long id)``` method that returns a ```Review``` instance
+- [ ] Modify your ```ReviewController``` to:
+    - [ ] accept an *id* request parameter
+    - [ ] call the ```findById``` method you created in ```ReviewRepository``` using the id specified in the request
 References:
 - Spring
     - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
