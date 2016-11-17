@@ -32,13 +32,18 @@ Try completing the following objectives on your own for creating a new Spring MV
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
 ## Review Application: Retrieve the Review from an Entity Repository
-- [ ] Create a ```ReviewRepository``` class with a ```findById(Long id)``` method that returns a ```Review``` instance
+- [ ] Create a ```ReviewRepository``` class with a ```public Review findById(Long id)``` method that returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
     - [ ] accept an *id* request parameter
     - [ ] call the ```findById``` method you created in ```ReviewRepository``` using the id specified in the request
     - [Note: the specific value of the id does not matter yet.]
     
-## Review Application: 
+## Review Application: Display Multiple Reviews
+- Update ```ReviewRepository``` to support multiple reviews
+    - [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
+    - [ ] Populate this map with three reviews, using each review's id as the key
+    - [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
+- 
     
 ### References:
 - Spring
