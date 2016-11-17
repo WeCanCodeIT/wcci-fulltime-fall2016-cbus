@@ -30,7 +30,7 @@ In the following steps, create classes in a package called ```review```. The ste
     - [ ] date
     - [ ] author
     - [ ] content
-- [ ] Create a ```ReviewController``` class [**Controller**] and ```review-view.html``` template [**View**] that:
+- [ ] Create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
     - creates an instance of Review
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
@@ -47,7 +47,7 @@ In the following steps, create classes in a package called ```review```. The ste
 - [ ] Populate this map with three reviews, using each review's id as the key
 - [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
 #### Update ```ReviewController``` to support retrieving multiple reviews
-- 
+- [ ] Add a method to ```ReviewController``` and an ```all-reviews-view-.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed 
 
 ### References:
 - Spring
