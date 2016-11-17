@@ -21,7 +21,7 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Import the generated project into Eclipse.
 
 ## Review Application
-In the following steps, create classes in a package called ```review```. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress.
+In the following steps, place the classes you create in the ```review``` package. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress.
 
 ###  Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
