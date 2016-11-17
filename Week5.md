@@ -4,6 +4,8 @@
 - Interfaces
     - extending interfaces
     - similarity to abstract classes
+    - role interfaces [TODO: need Fowler link]
+    - Single Responsibility Principle (SRP) [TODO: need link]
     - ```Iterator``` interface
         - Exercise: create an iterator that iterates over an array [TODO: link to Lions and Tigers and Bears]
 - Intro to Java Collections Framework
@@ -19,3 +21,9 @@
 
 ##Homework
 - PairGenerator assignment [TODO need link (convert to gist)]
+
+# Day 2
+## Topics
+- ```java.util.List``` interface
+    - ```java.util.ArrayList``` class
+    - when to use interfaces (for declarations) and implementations (for creation)
