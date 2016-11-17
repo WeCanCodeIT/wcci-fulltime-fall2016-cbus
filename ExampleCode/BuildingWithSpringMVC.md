@@ -15,6 +15,10 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
+- [ ] Create source folders named:
+    - [ ] src/main/java
+    - [ ] src/test/java
+    - [ ] src/main/resources
 
 ##  Review Application: Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
