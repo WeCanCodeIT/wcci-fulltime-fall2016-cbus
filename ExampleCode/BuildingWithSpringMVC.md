@@ -46,7 +46,8 @@ In the following steps, create classes in a package called ```review```. The ste
 - [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
 - [ ] Populate this map with three reviews, using each review's id as the key
 - [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
-#### Update ```ReviewController``` to support retrieving multiple reviews
+
+#### Update Controller and Create View
 - [ ] Add a method to ```ReviewController``` and an ```all-reviews-view-.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed 
 
 ### References:
