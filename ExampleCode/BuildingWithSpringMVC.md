@@ -4,3 +4,6 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Create a git repository for your project.
     - .gitignore: files git should ignore (steal this one: https://raw.githubusercontent.com/btforsythe/review-site-pascal/master/.gitignore) [TODO: create gist]
 - [ ] 
+
+References:
+- [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
