@@ -21,7 +21,7 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Import the generated project into Eclipse.
 
 ## Review Application
-In the following steps, create classes in a package called ```review```.
+In the following steps, create classes in a package called ```review```. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress.
 
 ###  Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
@@ -42,12 +42,13 @@ In the following steps, create classes in a package called ```review```.
     - [Note: the specific value of the id does not matter yet.]
     
 ### Display Multiple Reviews
-- Update ```ReviewRepository``` to support multiple reviews
-    - [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
-    - [ ] Populate this map with three reviews, using each review's id as the key
-    - [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
+#### Update ```ReviewRepository``` to support multiple reviews
+- [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
+- [ ] Populate this map with three reviews, using each review's id as the key
+- [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
+#### Update ```ReviewController``` to support retrieving multiple reviews
 - 
-    
+
 ### References:
 - Spring
     - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
