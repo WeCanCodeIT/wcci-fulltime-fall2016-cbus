@@ -59,9 +59,13 @@ In the following steps, place the classes you create in the ```review``` package
 
 ### Read reviews from JPA
 Currently we are reading reviews from a map we have hardcoded. We want instead to populate our embedded database with data after our Spring Boot application launches.
-- [ ] create a 
 
-### References:
-- Spring
+- In your Application class:
+    - [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
+    - [ ] 
+    - [ ] create a @Bean method that returns a ```org.springframework.boot.CommandLineRunner```
+    - [ ] within the method, 
+
+### References
     - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
-    - <a name="jpaTutorial">[Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)</a>
+    - [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
