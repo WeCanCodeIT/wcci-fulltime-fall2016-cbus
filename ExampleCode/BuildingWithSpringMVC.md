@@ -67,5 +67,5 @@ Currently we are reading reviews from a map we have hardcoded. We want instead t
     - [ ] within the method, 
 
 ### References
-    - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
-    - Spring JPA Tutorial: [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
+- Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
+- Spring JPA Tutorial: [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
