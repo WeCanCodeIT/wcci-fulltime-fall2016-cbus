@@ -48,7 +48,7 @@ In the following steps, place the classes you create in the ```review``` package
 #### Update ```ReviewRepository``` to support multiple reviews
 - [ ] Create an instance attribute/field in ```ReviewRepository``` of type ```Map<Long, Review>```
 - [ ] Populate this map with three reviews, using each review's id as the key
-- [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
+- [ ] Create a ```public Iterable<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
 
 #### Update Controller and Create View
 - [ ] Add a method to ```ReviewController``` and an ```all-reviews-view-.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed 
@@ -57,7 +57,11 @@ In the following steps, place the classes you create in the ```review``` package
 > *content to come*
 ----------------------
 
+### Read reviews from JPA
+Currently we are reading reviews from a map we have hardcoded. We want instead to populate our embedded database with data after our Spring Boot application launches.
+- [ ] create a 
+
 ### References:
 - Spring
     - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
-    - [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
+    - <a name="jpaTutorial">[Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)</a>
