@@ -81,6 +81,17 @@ We need to indicate to JPA that reviews are entities, so make the requisite chan
 
 At this point, you should be able to run the application and view a listing of reviews in your browser.
 
+### Categorize Reviews
+During this step, we will be adding a new entity, ```Category```. Each review should have a category. To this end:
+- [ ] create a ```Category``` class
+- [ ] configure this class as an entity, like we did for ```Review```
+- [ ] in addition to its id, give it a name attribute
+
+Each ```Review``` can be in one category, but each ```Category``` can have many reviews. This is known as a many-to-one relationship from the perspective of ```Review```, or a one-to-many relationship from the perspective of ```Category```. In order to establish this relationship so that JPA can manage it:
+- [ ] add a ```Category category``` attribute to ```Review```
+- [ ] modify ```Review```'s constructor to allow one to specify either a category name or a ```Category``` instance, which is used to populate the ```category``` attribute
+- [ ] 
+
 ### References
 - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
 - Spring JPA Tutorial: [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
