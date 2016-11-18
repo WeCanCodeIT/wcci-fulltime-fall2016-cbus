@@ -93,7 +93,7 @@ Each ```Review``` can be in one category, but each ```Category``` can have many 
 - [ ] annotate the ```category``` attribute with ```@ManyToOne```
 
 ### Create ```CategoryRepository```
-[ ] as we did for ```Review```, create a ```CategoryRepository``` interface
+- [ ] as we did for ```Review```, create a ```CategoryRepository``` interface
 
 ### Update ```ReviewApplication```
 - [ ] inject a ```CategoryRepository``` via @Resource
