@@ -89,8 +89,15 @@ During this step, we will be adding a new entity, ```Category```. Each review sh
 
 Each ```Review``` can be in one category, but each ```Category``` can have many reviews. This is known as a many-to-one relationship from the perspective of ```Review```, or a one-to-many relationship from the perspective of ```Category```. In order to establish this relationship so that JPA can manage it:
 - [ ] add a ```Category category``` attribute to ```Review```
-- [ ] modify ```Review```'s constructor to allow one to specify either a category name or a ```Category``` instance, which is used to populate the ```category``` attribute
-- [ ] annotate the ```category``` attribute with ```@ManyToOne(cascade=CascadeType.ALL)``` (We are using the ```cascade``` attribute her for simplicity's sake to allow saving, etc of a category whenever a review is saved.) [TODO: this bit is wrong, changing it.]
+- [ ] modify ```Review```'s constructor to allow one to specify either a ```Category``` instance, which is used to populate the ```category``` attribute
+- [ ] annotate the ```category``` attribute with ```@ManyToOne```
+
+### Create ```CategoryRepository```
+[ ] as we did for ```Review```, create a ```CategoryRepository``` interface
+
+### Update ```ReviewApplication```
+- [ ] inject a ```CategoryRepository``` via @Resource
+- [ ] before creating/saving reviews, create and save (via the ```CategoryRepository```'s ```save``` method) the categories you will use when creating reviews
 
 ### Display Review Categories
 - [ ] modify the individual review view so that the category name is displayed
