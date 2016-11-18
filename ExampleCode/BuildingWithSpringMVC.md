@@ -36,10 +36,10 @@ In the following steps, place the classes you create in the ```review``` package
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
 ### Retrieve the Review from an Entity Repository
-- [ ] Create a ```ReviewRepository``` class with a ```public Review findById(Long id)``` method that returns a ```Review``` instance
+- [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
     - [ ] accept an *id* request parameter
-    - [ ] call the ```findById``` method you created in ```ReviewRepository``` using the id specified in the request
+    - [ ] call the ```findOne``` method you created in ```ReviewRepository``` using the id specified in the request
     - [Note: the specific value of the id does not matter yet.]
     
 ### Display Multiple Reviews
