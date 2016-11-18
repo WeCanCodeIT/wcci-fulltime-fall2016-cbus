@@ -44,7 +44,7 @@ In the following steps, place the classes you create in the ```review``` package
     
 ### Display Multiple Reviews
 #### Update ```ReviewRepository``` to support multiple reviews
-- [ ] Create an instance attribute/field in ```ReviewRepository`` of type ```Map<Long, Review>```
+- [ ] Create an instance attribute/field in ```ReviewRepository``` of type ```Map<Long, Review>```
 - [ ] Populate this map with three reviews, using each review's id as the key
 - [ ] Create a ```public Collection<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
 
