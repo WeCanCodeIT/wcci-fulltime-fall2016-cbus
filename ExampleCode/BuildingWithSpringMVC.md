@@ -20,6 +20,7 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
 - [ ] Since this will be a Spring boot application, create an appropriate ```review.ReviewApplication``` class that calls ```SpringApplication.run```. (Refer to the tutorials in References if you struggle).
+At the end of this step, you should be able to run ReviewApplication, either as a Java Application in Eclipse or via ```./gradlew bootRun```.
 
 ## Review Application
 In the following steps, place the classes you create in the ```review``` package. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress.
