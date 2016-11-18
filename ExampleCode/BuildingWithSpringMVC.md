@@ -66,13 +66,17 @@ Currently we are reading reviews from a map we have hardcoded. We want instead t
 We will be using Spring Data's JPA support, which dynamically generates repository implementations, so make the following changes to ```ReviewRepository```:
 - [ ] remove its body (method implementations, etc)
 - [ ] change it to an interface
-- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Repository, Long>```
+- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Repository, Long>``` (```Long``` is the Repository's id type)
 
 We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
-    - [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
-    - [ ] 
-    - [ ] create a @Bean method that returns a ```org.springframework.boot.CommandLineRunner```
-    - [ ] within the method, 
+- [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
+- [ ] create an inner class that implements ```org.springframework.boot.CommandLineRunner```
+    - [ ] implement its ```run(String... args)``` method such that it creates Review instances and calls the repository's ```save``` method to write each of them to the database
+- [ ] create a @Bean method in ```ReviewApplication``` that returns an instance of the ```CommandLineRunner``` you created
+    
+We need to indicate to JPA that reviews are entities, so make the requisite changes to the ```Review``` class. These involve:
+
+At this point, you should be able to view the reviews you populated in the Command
 
 ### References
 - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
