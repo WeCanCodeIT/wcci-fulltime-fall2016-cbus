@@ -94,7 +94,9 @@ Each ```Review``` can be in one category, but each ```Category``` can have many 
 
 ### Display Review Categories
 - [ ] modify the individual review view so that the category name is displayed
-- [ ] modify the all reviews view so that reviews are sorted by category (**Extension**)
+- modify the all reviews view
+    - [ ] to display category name
+    - [ ] so that reviews are sorted by category (**Extension**)
 
 ### References
 - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
