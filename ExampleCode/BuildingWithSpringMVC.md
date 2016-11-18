@@ -19,12 +19,15 @@ Try completing the following objectives on your own for creating a new Spring MV
 - [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
-- [ ] Since this will be a Spring boot application, create an appropriate ```review.ReviewApplication``` class that calls ```SpringApplication.run```. (Refer to the tutorials in References if you struggle).
 
 At the end of this step, you should be able to run ReviewApplication, either as a Java Application in Eclipse or via ```./gradlew bootRun```.
 
 ## Review Application
-In the following steps, place the classes you create in the ```review``` package. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress.
+In the following steps, place the classes you create in the ```review``` package. The steps do not specifically refer to tests, but create appropriate tests (first!) as you progress. Refer to [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) for an overview.
+
+Since this will be a Spring boot application:
+- [ ] Create an appropriate ```review.ReviewApplication``` class that calls ```SpringApplication.run```.
+- [ ] Verify that you can run ReviewApplication, either as a Java Application in Eclipse or via ```./gradlew bootRun```.
 
 ###  Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
@@ -67,5 +70,5 @@ Currently we are reading reviews from a map we have hardcoded. We want instead t
     - [ ] within the method, 
 
 ### References
-- Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
+- Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
 - Spring JPA Tutorial: [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
