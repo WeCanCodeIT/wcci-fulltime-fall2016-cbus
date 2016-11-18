@@ -66,7 +66,7 @@ Currently we are reading reviews from a map we have hardcoded. We want instead t
 We will be using Spring Data's JPA support, which dynamically generates repository implementations, so make the following changes to ```ReviewRepository```:
 - [ ] remove its body (method implementations, etc)
 - [ ] change it to an interface
-- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Repository, Long>``` (```Long``` is the Repository's id type)
+- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Review, Long>``` (```Long``` is the Repository's id type)
 
 We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
 - [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
