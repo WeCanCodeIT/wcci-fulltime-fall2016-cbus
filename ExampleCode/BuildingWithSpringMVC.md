@@ -53,7 +53,11 @@ In the following steps, place the classes you create in the ```review``` package
 #### Update Controller and Create View
 - [ ] Add a method to ```ReviewController``` and an ```all-reviews-view-.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed 
 
+----------------------
+*content to come*
+----------------------
+
 ### References:
 - Spring
-    - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
+    - [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content) [TODO: move this up to MVC section]
     - [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa)
