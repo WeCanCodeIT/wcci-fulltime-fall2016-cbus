@@ -74,9 +74,12 @@ We need to populate our embedded database on application startup, so in your ```
     - [ ] implement its ```run(String... args)``` method such that it creates Review instances and calls the repository's ```save``` method to write each of them to the database
 - [ ] create a @Bean method in ```ReviewApplication``` that returns an instance of the ```CommandLineRunner``` you created
     
-We need to indicate to JPA that reviews are entities, so make the requisite changes to the ```Review``` class. These involve:
+We need to indicate to JPA that reviews are entities, so make the requisite changes to the ```Review``` class. (Refer to [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa) for an example) These involve:
+- [ ] annotating the class with @Entity
+- [ ] annotating its id attribute with @Id and @GeneratedValue
+- [ ] creating a default constructor -- this can (and probably should) be private
 
-At this point, you should be able to view the reviews you populated in the Command
+At this point, you should be able to run the application and view a listing of reviews in your browser.
 
 ### References
 - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
