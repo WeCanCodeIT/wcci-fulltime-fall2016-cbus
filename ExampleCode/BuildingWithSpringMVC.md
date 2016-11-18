@@ -90,7 +90,11 @@ During this step, we will be adding a new entity, ```Category```. Each review sh
 Each ```Review``` can be in one category, but each ```Category``` can have many reviews. This is known as a many-to-one relationship from the perspective of ```Review```, or a one-to-many relationship from the perspective of ```Category```. In order to establish this relationship so that JPA can manage it:
 - [ ] add a ```Category category``` attribute to ```Review```
 - [ ] modify ```Review```'s constructor to allow one to specify either a category name or a ```Category``` instance, which is used to populate the ```category``` attribute
-- [ ] 
+- [ ] annotate the ```category``` attribute with ```@ManyToOne(cascade=CascadeType.ALL)``` (We are using the ```cascade``` attribute her for simplicity's sake to allow saving, etc of a category whenever a review is saved.)
+
+### Display Review Categories
+- [ ] modify the individual review view so that the category name is displayed
+- [ ] modify the all reviews view so that reviews are sorted by category (**Extension**)
 
 ### References
 - Spring MVC Tutorial: [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content)
