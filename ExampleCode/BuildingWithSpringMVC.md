@@ -63,7 +63,12 @@ Since this will be a Spring boot application:
 ### Read reviews from JPA
 Currently we are reading reviews from a map we have hardcoded. We want instead to populate our embedded database with data after our Spring Boot application launches.
 
-- In your Application class:
+We will be using Spring Data's JPA support, which dynamically generates repository implementations, so make the following changes to ```ReviewRepository```:
+- [ ] remove its body (method implementations, etc)
+- [ ] change it to an interface
+- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Repository, Long>```
+
+We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
     - [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
     - [ ] 
     - [ ] create a @Bean method that returns a ```org.springframework.boot.CommandLineRunner```
