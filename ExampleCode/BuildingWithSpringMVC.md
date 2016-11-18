@@ -79,7 +79,7 @@ We need to indicate to JPA that reviews are entities, so make the requisite chan
 - [ ] annotating its id attribute with @Id and @GeneratedValue
 - [ ] creating a default constructor -- this can (and probably should) be private
 
-At this point, you should be able to run the application and view a listing of reviews in your browser.
+At this point, you should be able to run the application and view a listing of reviews in your browser. Note: from this point forward, it is no longer necessary to populate the id attributes of ```Review``` and ```Category``` in their constructors since JPA will be generating ids.
 
 ### Categorize Reviews
 During this step, we will be adding a new entity, ```Category```. Each review should have a category. To this end:
@@ -90,7 +90,7 @@ During this step, we will be adding a new entity, ```Category```. Each review sh
 Each ```Review``` can be in one category, but each ```Category``` can have many reviews. This is known as a many-to-one relationship from the perspective of ```Review```, or a one-to-many relationship from the perspective of ```Category```. In order to establish this relationship so that JPA can manage it:
 - [ ] add a ```Category category``` attribute to ```Review```
 - [ ] modify ```Review```'s constructor to allow one to specify either a category name or a ```Category``` instance, which is used to populate the ```category``` attribute
-- [ ] annotate the ```category``` attribute with ```@ManyToOne(cascade=CascadeType.ALL)``` (We are using the ```cascade``` attribute her for simplicity's sake to allow saving, etc of a category whenever a review is saved.)
+- [ ] annotate the ```category``` attribute with ```@ManyToOne(cascade=CascadeType.ALL)``` (We are using the ```cascade``` attribute her for simplicity's sake to allow saving, etc of a category whenever a review is saved.) [TODO: this bit is wrong, changing it.]
 
 ### Display Review Categories
 - [ ] modify the individual review view so that the category name is displayed
