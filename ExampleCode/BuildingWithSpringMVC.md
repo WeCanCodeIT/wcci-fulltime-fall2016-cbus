@@ -78,7 +78,7 @@ We will be using Spring Data's JPA support, which dynamically generates reposito
 
 We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
 - [ ] Inject a ```ReviewRepository``` instance by using the ```@Resource``` annotation.
-- [ ] Create an inner class that implements ```org.springframework.boot.CommandLineRunner```. This inner class should be a ```public static class``` declared inside the ```ReviewApplication``` class.
+- [ ] Create an inner class that implements ```org.springframework.boot.CommandLineRunner```. This inner class should be a ```private class``` declared inside the ```ReviewApplication``` class.
     - [ ] This class's ```run(String... args)``` method such that it creates Review instances and calls the repository's ```save``` method to write each of them to the database.
 - [ ] Create a @Bean method in ```ReviewApplication``` that creates (via ```new```) and returns an instance of the ```CommandLineRunner``` you created.
 
@@ -99,7 +99,7 @@ public class ReviewApplication {
         return new ReviewPopulatorRunner();
     }
 
-    public class ReviewPopulatorRunner implements CommandLineRunner {
+    private class ReviewPopulatorRunner implements CommandLineRunner {
         @Override
         public void run(String... args) throws Exception {
             // code to populate reviews
