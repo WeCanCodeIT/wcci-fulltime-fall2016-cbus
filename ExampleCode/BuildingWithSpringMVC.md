@@ -3,20 +3,19 @@ Try completing the following objectives on your own for creating a new Spring MV
 
 ## Project Setup (Iteration 0)
 - [ ] Create a git repository for your project.
-    - .gitignore: files git should ignore (steal this one: https://raw.githubusercontent.com/btforsythe/review-site-pascal/master/.gitignore) [TODO: create gist]
-- [ ] Add a ```build.gradle``` file (steal this one: https://raw.githubusercontent.com/btforsythe/review-site-pascal/di-with-mockito/build.gradle) [TODO: create gist]
+- [ ] add a .gitignore (you can use [this one](.gitignore))
+- [ ] Add a ```build.gradle``` file (steal this one: https://raw.githubusercontent.com/btforsythe/review-site-pascal/di-with-mockito/build.gradle) [TODO: use Spring Initializr for this]
     - Spring-specific dependencies within:
         - org.springframework.boot:spring-boot-starter-thymeleaf: Spring Boot + Spring MVC + Thymeleaf
         - org.springframework.boot:spring-boot-devtools: development tools for Spring Boot that allow restarting the application when the application is rebuilt
         - org.springframework.boot:spring-boot-starter-data-jpa: Spring Data + JPA support
         - org.springframework:spring-test: Testing support for Spring
         - org.springframework.boot:spring-boot-starter-test & org.springframework.boot:spring-boot-test: Testing support for Spring Boot
-- [ ] Open a Git Bash shell.
-- [ ] Create folders named:
+- Create folders named:
     - [ ] src/main/java
     - [ ] src/test/java
     - [ ] src/main/resources
-- [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder.
+- [ ] Run ```gradle wrapper``` (the gradle wrapper task) from your local repository folder. [TODO won't need this after we use Spring Initializr]
 - [ ] Run ```./gradlew eclipse``` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
 
@@ -70,25 +69,52 @@ Your classes should look something like this:
 ### Read reviews from JPA
 Currently we are reading reviews from a map we have hardcoded. We want instead to populate our embedded database with data after our Spring Boot application launches.
 
-We will be using Spring Data's JPA support, which dynamically generates repository implementations, so make the following changes to ```ReviewRepository```:
-- [ ] remove its body (method implementations, etc)
-- [ ] change it to an interface
-- [ ] have it extend ```org.springframework.data.repository.CrudRepository<Review, Long>``` (```Long``` is the Repository's id type)
-
-[TODO: modify controller to inject repository]
+We will be using Spring Data's JPA support, which dynamically generates repository implementations, so:
+- Make the following changes to ```ReviewRepository```:
+    - [ ] Remove its body (method implementations, etc).
+    - [ ] Change it from a ```class``` to an ```interface```.
+    - [ ] Have it extend ```org.springframework.data.repository.CrudRepository<Review, Long>```. (```Long``` is ```Review```'s id type.)
+- [ ] Update ```ReviewController``` to inject ```ReviewRepository``` by using the ```@Resource``` annotation rather than calling its constructor.
 
 We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
-- [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
-- [ ] create an inner class that implements ```org.springframework.boot.CommandLineRunner```
-    - [ ] implement its ```run(String... args)``` method such that it creates Review instances and calls the repository's ```save``` method to write each of them to the database
-- [ ] create a @Bean method in ```ReviewApplication``` that returns an instance of the ```CommandLineRunner``` you created
-    
-We need to indicate to JPA that reviews are entities, so make the requisite changes to the ```Review``` class. (Refer to [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa) for an example) These involve:
-- [ ] annotating the class with @Entity
-- [ ] annotating its id attribute with @Id and @GeneratedValue
-- [ ] creating a default constructor -- this can (and probably should) be private
+- [ ] Inject a ```ReviewRepository``` instance by using the ```@Resource``` annotation.
+- [ ] Create an inner class that implements ```org.springframework.boot.CommandLineRunner```. This inner class should be a ```public static class``` declared inside the ```ReviewApplication``` class.
+    - [ ] This class's ```run(String... args)``` method such that it creates Review instances and calls the repository's ```save``` method to write each of them to the database.
+- [ ] Create a @Bean method in ```ReviewApplication``` that creates (via ```new```) and returns an instance of the ```CommandLineRunner``` you created.
 
-At this point, you should be able to run the application and view a listing of reviews in your browser. Note: from this point forward, it is no longer necessary to populate the id attributes of ```Review``` and ```Category``` in their constructors since JPA will be generating ids.
+After these changes, your ```ReviewApplication``` class should look similar to the following:
+```java
+@SpringBootApplication
+public class ReviewApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ReviewApplication.class, args);
+    }
+
+    @Resource
+    private ReviewRepository reviewRepository;
+
+    @Bean
+    public CommandLineRunner populateReviews() {
+        return new ReviewPopulatorRunner();
+    }
+
+    public class ReviewPopulatorRunner implements CommandLineRunner {
+        @Override
+        public void run(String... args) throws Exception {
+            // code to populate reviews
+        }
+    }
+}
+```
+    
+We need to indicate to JPA that reviews are entities, so make the requisite changes to the ```Review``` class. (Refer to [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa) for an example)
+- [ ] Annotate the class with @Entity.
+- [ ] Annotate its ```id``` attribute with ```@Id``` and ```@GeneratedValue```.
+- [ ] Remove ```id``` from the constructor since JPA will generate these. Tip: if you use Eclipse's *Change Method Signature* refactoring to remove the ```id``` parameter, it will update code that calls the constructor, removing the id automagically.
+- [ ] Create a default constructor. This should be private since it will only be used by JPA.
+
+At this point, you should be able to run the application and view a listing of reviews in your browser.
 
 ### Categorize Reviews
 During this step, we will be adding a new entity, ```Category```. Each review should have a category. To this end:
@@ -102,11 +128,11 @@ Each ```Review``` can be in one category, but each ```Category``` can have many 
 - [ ] annotate the ```category``` attribute with ```@ManyToOne```
 
 ### Create ```CategoryRepository```
-- [ ] as we did for ```Review```, create a ```CategoryRepository``` interface
+- [ ] As we did for ```Review```, create a ```CategoryRepository``` interface that extends ```CrudRepository```.
 
 ### Update ```ReviewApplication```
-- [ ] inject a ```CategoryRepository``` via @Resource
-- [ ] before creating/saving reviews, create and save (via the ```CategoryRepository```'s ```save``` method) the categories you will use when creating reviews
+- [ ] Inject a ```CategoryRepository``` via ```@Resource```.
+- [ ] Modify the code that creates reviews so that it creates and saves (via the ```CategoryRepository```'s ```save``` method) each category you will use before creating and saving reviews.
 
 ### Display Review Categories
 - [ ] modify the individual review view so that the category name is displayed
