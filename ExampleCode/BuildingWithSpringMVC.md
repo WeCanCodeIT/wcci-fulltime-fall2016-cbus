@@ -34,9 +34,12 @@ Since this will be a Spring boot application:
     - [ ] Date date
     - [ ] String author
     - [ ] String content
-- [ ] create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
-    - creates an instance of Review (create an appropriate constructor and use the ```new``` operator)
-    - displays the Review instance when the url *http://localhost:8080/review* is accessed    
+- implement a controller and view that will display the Review instance when the url *http://localhost:8080/review* is accessed    
+    - create a ```ReviewController``` class [**Controller**] that responds to */review* requests by:
+        - [ ] creating an instance of Review (create an appropriate constructor and use the ```new``` operator)
+        - [ ] adding the review to the ```Model``` as an attribute
+        - [ ] returning the name of the template for displaying a single review ("review-view")
+    - [ ] create a ``review-view.html``` template [**View**] that displays the attributes of the review
 
 Your classes should look something like this:
 
