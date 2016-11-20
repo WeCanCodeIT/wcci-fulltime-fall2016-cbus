@@ -29,11 +29,11 @@ Since this will be a Spring boot application:
 
 ###  Display a Single Review
 - [ ] Create a ```Review``` class [**Model**] with the following attributes:
-    - [ ] id
-    - [ ] title
-    - [ ] date
-    - [ ] author
-    - [ ] content
+    - [ ] long id
+    - [ ] String title
+    - [ ] Date date
+    - [ ] String author
+    - [ ] String content
 - [ ] Create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
     - creates an instance of Review (use the ```new``` operator)
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
