@@ -35,7 +35,7 @@ Since this will be a Spring boot application:
     - [ ] String author
     - [ ] String content
 - [ ] Create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
-    - creates an instance of Review (use the ```new``` operator)
+    - creates an instance of Review (create an appropriate constructor and use the ```new``` operator)
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
 ### Retrieve the Review from an Entity Repository
