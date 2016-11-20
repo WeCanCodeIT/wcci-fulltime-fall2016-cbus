@@ -39,7 +39,7 @@ Since this will be a Spring boot application:
         - [ ] creating an instance of Review (create an appropriate constructor and use the ```new``` operator)
         - [ ] adding the review to the ```Model``` as an attribute
         - [ ] returning the name of the template for displaying a single review ("review-view")
-    - [ ] create a template (```src/main/resources/templates/review-view.html```) that displays the attributes of the review
+    - [ ] create a Thymeleaf template at ```src/main/resources/templates/review-view.html``` that displays the attributes of the review
 
 Your classes should look something like this:
 
