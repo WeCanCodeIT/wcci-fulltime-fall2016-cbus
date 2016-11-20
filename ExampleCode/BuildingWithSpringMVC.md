@@ -55,16 +55,17 @@ Your classes should look something like this:
 
 ### Display Multiple Reviews
 #### Update ```ReviewRepository``` to support multiple reviews
-- [ ] Create an instance attribute/field in ```ReviewRepository``` of type ```Map<Long, Review>```
-- [ ] Populate this map with three reviews, using each review's id as the key
+- [ ] Create an instance attribute in ```ReviewRepository``` of type ```Map<Long, Review>```.
+- [ ] Populate this map with three reviews, using each review's id as the key.
 - [ ] Create a ```public Iterable<Review> findAll()``` method in ```ReviewRepository``` that returns all the reviews from the map.
 
-#### Update Controller and Create View
-- [ ] Add a method to ```ReviewController``` and an ```all-reviews-view-.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed 
+#### Update the Repository to Display a Specific Review
+- [ ] Modify the ```findOne``` method in ```ReviewRepository``` to return the review associated with the ```id``` parameter.
 
-----------------------
-> *content to come*
-----------------------
+#### Update Controller and Create View in Order to Display All Reviews
+- [ ] Add a method to ```ReviewController``` and an ```all-reviews-view.html``` template to display all reviews when the url *http://localhost:8080/allReviews* is accessed
+
+![class diagram with reviews mapped](BuildingWithSpringMvc/classDiagrams/withReviewsMapped.png)
 
 ### Read reviews from JPA
 Currently we are reading reviews from a map we have hardcoded. We want instead to populate our embedded database with data after our Spring Boot application launches.
@@ -73,6 +74,8 @@ We will be using Spring Data's JPA support, which dynamically generates reposito
 - [ ] remove its body (method implementations, etc)
 - [ ] change it to an interface
 - [ ] have it extend ```org.springframework.data.repository.CrudRepository<Review, Long>``` (```Long``` is the Repository's id type)
+
+[TODO: modify controller to inject repository]
 
 We need to populate our embedded database on application startup, so in your ```ReviewApplication``` class:
 - [ ] inject a ```ResourceRepository``` instance by using the ```@Resource``` annotation
