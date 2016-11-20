@@ -39,6 +39,7 @@ Since this will be a Spring boot application:
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
 Your classes should look something like this:
+
 ![Initial Class Diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
 
 ### Retrieve the Review from an Entity Repository
