@@ -38,6 +38,9 @@ Since this will be a Spring boot application:
     - creates an instance of Review (create an appropriate constructor and use the ```new``` operator)
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
+Your classes should look something like this:
+![Initial Class Diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
+
 ### Retrieve the Review from an Entity Repository
 - [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
