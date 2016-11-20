@@ -96,10 +96,10 @@ public class ReviewApplication {
 
     @Bean
     public CommandLineRunner populateReviews() {
-        return new ReviewPopulatorRunner();
+        return new ReviewPopulator();
     }
 
-    private class ReviewPopulatorRunner implements CommandLineRunner {
+    private class ReviewPopulator implements CommandLineRunner {
         @Override
         public void run(String... args) throws Exception {
             // code to populate reviews
