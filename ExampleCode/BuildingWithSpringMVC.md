@@ -40,7 +40,7 @@ Since this will be a Spring boot application:
 
 Your classes should look something like this:
 
-![Initial Class Diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
+![initial class diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
 
 ### Retrieve the Review from an Entity Repository
 - [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that creates and returns a ```Review``` instance
@@ -48,6 +48,8 @@ Your classes should look something like this:
     - [ ] accept an *id* request parameter
     - [ ] call the ```findOne``` method you created in ```ReviewRepository``` using the id specified in the request (the specific value of the id does not matter yet)
     
+![class diagram with repository](BuildingWithSpringMvc/classDiagrams/withRepository.png)
+
 ### Display Multiple Reviews
 #### Update ```ReviewRepository``` to support multiple reviews
 - [ ] Create an instance attribute/field in ```ReviewRepository``` of type ```Map<Long, Review>```
