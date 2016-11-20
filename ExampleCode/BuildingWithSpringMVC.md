@@ -116,6 +116,8 @@ We need to indicate to JPA that reviews are entities, so make the requisite chan
 
 At this point, you should be able to run the application and view a listing of reviews in your browser.
 
+![class diagram - initial JPA](BuildingWithSpringMvc/classDiagrams/initialJpa.png)
+
 ### Categorize Reviews
 During this step, we will be adding a new entity, ```Category```. Each review should have a category. To this end:
 - [ ] create a ```Category``` class
