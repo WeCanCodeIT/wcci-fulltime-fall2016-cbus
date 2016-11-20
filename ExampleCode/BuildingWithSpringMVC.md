@@ -28,13 +28,13 @@ Since this will be a Spring boot application:
 - [ ] verify that you can run ```ReviewApplication```, either as a Java Application in Eclipse or via ```./gradlew bootRun```.
 
 ###  Display a Single Review
-- [ ] Create a ```Review``` class [**Model**] with the following attributes:
+- create a ```Review``` class [**Model**] with the following attributes:
     - [ ] long id
     - [ ] String title
     - [ ] Date date
     - [ ] String author
     - [ ] String content
-- [ ] Create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
+- [ ] create a ```ReviewController``` class [**Controller**] and a ```review-view.html``` template [**View**] that:
     - creates an instance of Review (create an appropriate constructor and use the ```new``` operator)
     - displays the Review instance when the url *http://localhost:8080/review* is accessed    
 
@@ -43,8 +43,8 @@ Your classes should look something like this:
 ![initial class diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
 
 ### Retrieve the Review from an Entity Repository
-- [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that creates and returns a ```Review``` instance
-- [ ] Modify your ```ReviewController``` to:
+- [ ] create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that creates and returns a ```Review``` instance
+- modify your ```ReviewController``` to:
     - [ ] accept an *id* request parameter
     - [ ] call the ```findOne``` method you created in ```ReviewRepository``` using the id specified in the request (the specific value of the id does not matter yet)
     
