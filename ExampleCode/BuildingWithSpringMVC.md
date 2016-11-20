@@ -43,11 +43,10 @@ Your classes should look something like this:
 ![Initial Class Diagram](BuildingWithSpringMvc/classDiagrams/initial.png)
 
 ### Retrieve the Review from an Entity Repository
-- [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that returns a ```Review``` instance
+- [ ] Create a ```ReviewRepository``` class with a ```public Review findOne(Long id)``` method that creates and returns a ```Review``` instance
 - [ ] Modify your ```ReviewController``` to:
     - [ ] accept an *id* request parameter
-    - [ ] call the ```findOne``` method you created in ```ReviewRepository``` using the id specified in the request
-    - [Note: the specific value of the id does not matter yet.]
+    - [ ] call the ```findOne``` method you created in ```ReviewRepository``` using the id specified in the request (the specific value of the id does not matter yet)
     
 ### Display Multiple Reviews
 #### Update ```ReviewRepository``` to support multiple reviews
