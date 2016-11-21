@@ -11,15 +11,14 @@ Due: Monday, October 24th before 9:30 AM
 ### Required Tasks
 
 - [ ] Yak Shaving
-  - [ ] Create a console application in Visual Studio called `VirtualPet`
-  - [ ] Create a repository called `virtual-pet`
+  - [ ] Create a Java project called `virtual-pet`
   - [ ] Create a README.md file explaining what this project will involve
 - [ ] VirtualPet class
-  - [ ] Properties (at least three)
-  - [ ] Methods (at least three)
-  - [ ] `Tick` method
+  - [ ] attributes (aka properties aka fields) (at least three)
+  - [ ] messages it receives (aka methods) (at least three)
+  - [ ] `tick` method
 - [ ] Program class
-  - [ ] `Main` method
+  - [ ] `main` method
 
 ### Stretch Tasks
 
