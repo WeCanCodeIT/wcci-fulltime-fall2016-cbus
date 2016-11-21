@@ -135,6 +135,15 @@ At this point, you should be able to run the application and view a listing of r
 
 ![class diagram - initial JPA](BuildingWithSpringMvc/classDiagrams/initialJpa.png)
 
+### Development Tips
+
+#### DevTools properties
+
+Spring Boot looks in your OS home directory (`C:\Users\*yourUserName*` on Windows or `~` on Linux and Mac) for a file called `.spring-boot-devtools.properties`. This is where you can set and/or override properties for development purposes. In order to log the SQL that JPA/Hibernate is generating, create this file and populate it thusly:
+```properties
+spring.jpa.show-sql=true
+```
+
 ### Categorize Reviews
 During this step, we will be adding a new entity, `Category`. Each review should have a category. To this end:
 - [ ] create a `Category` class
