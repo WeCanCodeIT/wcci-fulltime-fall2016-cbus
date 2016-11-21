@@ -16,7 +16,13 @@ We need to create a `build.gradle` file that uses the Spring Boot plugin and dec
 
 - [ ] Add a `build.gradle` file. Either:
     - Use [this one](BuildingWithSpringMvc/build.gradle).
-    - Use [Spring Initializr](http://start.spring.io/) to generate bootstrap code.
+        - [ ] Copy it into your repository folder.
+        - [ ] Run `gradle wrapper` (the gradle wrapper task) from your local repository folder.
+        - Create folders named:
+            - [ ] src/main/java
+            - [ ] src/test/java
+            - [ ] src/main/resources
+    - Use [Spring Initializr](http://start.spring.io/) to generate bootstrap code. This will generate a zip file containing `build.gradle`, source/resource folders, and the gradle wrapper.
         - [ ] Choose to generate a Gradle Project
         - [ ] Specify a Group (ID) of your choice -- your github user id is suggested.
         - [ ] Specify your repository name as the Artifact (ID).
@@ -26,12 +32,7 @@ We need to create a `build.gradle` file that uses the Spring Boot plugin and dec
             - [ ] DevTools
             - [ ] H2
         - [ ] Generate Project
-        - [ ] Extract the zip file's contents into your repository's directory. Make sure `build.gradle` is in the root.
-- Create folders named:
-    - [ ] src/main/java
-    - [ ] src/test/java
-    - [ ] src/main/resources
-- [ ] Run `gradle wrapper` (the gradle wrapper task) from your local repository folder. [TODO won't need this after we use Spring Initializr]
+        - [ ] Extract the zip file's contents into your repository folder. Make sure `build.gradle` is in the root.
 - [ ] Run `./gradlew eclipse` (use the gradle wrapper to run the eclipse task) from your local repository folder.
 - [ ] Import the generated project into Eclipse.
 
