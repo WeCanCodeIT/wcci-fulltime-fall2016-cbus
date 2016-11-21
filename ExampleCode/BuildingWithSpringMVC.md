@@ -4,13 +4,29 @@ Try completing the following objectives on your own for creating a new Spring MV
 ## Project Setup (Iteration 0)
 - [ ] Create a git repository for your project.
 - [ ] add a .gitignore (you can use [this one](.gitignore))
-- [ ] Add a ```build.gradle``` file (steal this one: https://raw.githubusercontent.com/btforsythe/review-site-pascal/di-with-mockito/build.gradle) [TODO: use Spring Initializr for this]
-    - Spring-specific dependencies within:
-        - org.springframework.boot:spring-boot-starter-thymeleaf: Spring Boot + Spring MVC + Thymeleaf
-        - org.springframework.boot:spring-boot-devtools: development tools for Spring Boot that allow restarting the application when the application is rebuilt
-        - org.springframework.boot:spring-boot-starter-data-jpa: Spring Data + JPA support
-        - org.springframework:spring-test: Testing support for Spring
-        - org.springframework.boot:spring-boot-starter-test & org.springframework.boot:spring-boot-test: Testing support for Spring Boot
+
+We need to create a ```build.gradle``` file that uses the Spring Boot plugin and declares the necessary dependencies. These dependencies are:
+
+- Spring Boot [Starters](http://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/reference/htmlsingle/#using-boot-starter), the names of which start with ```spring-boot-starter-```:
+    - ```thymeleaf```: Thymeleaf view support for MVC applications, which transitively includes the other dependencies needed for MVC as well
+    - ```data-jpa```: Spring Data JPA with Hibernate support.
+    - ```test```: Spring-specific test support as well as junit, hamcrest, and mockito.
+- ```org.springframework.boot:spring-boot-devtools```: Development support, allowing things like reloading a Spring Boot application when files change.
+- ```com.h2database:h2```: H2 database support, enabling a default embedded test database.
+
+- [ ] Add a ``build.gradle``` file. Either:
+    - Use [this one](BuildingWithSpringMvc/build.gradle).
+    - Use [Spring Initializr](http://start.spring.io/) to generate bootstrap code.
+        - [ ] Choose to generate a Gradle Project
+        - [ ] Specify a Group (ID) of your choice -- your github user id is suggested.
+        - [ ] Specify your repository name as the Artifact (ID).
+        - Add the following starters:
+            - [ ] Thymeleaf
+            - [ ] JPA
+            - [ ] DevTools
+            - [ ] H2
+        - [ ] Generate Project
+        - [ ] Extract the zip file's contents into your repository's directory. Make sure ```build.gradle``` is in the root.
 - Create folders named:
     - [ ] src/main/java
     - [ ] src/test/java
