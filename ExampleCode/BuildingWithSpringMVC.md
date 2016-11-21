@@ -143,6 +143,16 @@ Spring Boot looks in your OS home directory (`C:\Users\*yourUserName*` on Window
 ```properties
 spring.jpa.show-sql=true
 ```
+#### Accessing the H2 Test Databasse
+
+We are using the temporary embedded H2 database that Spring creates for us. In order to use the H2 console to access this database (after the application is running), access http://localhost:8080/h2-console from your browser. The connection properties should be as follows (you'll probably only need to change the JDBC URL):
+
+property | value
+-------- | -----
+Driver Class | org.h2.Driver
+JDBC URL | jdbc:h2:mem:testdb
+User Name | sa
+Password | *leave blank*
 
 ### Categorize Reviews
 During this step, we will be adding a new entity, `Category`. Each review should have a category. To this end:
